@@ -1,0 +1,48 @@
+.search-account-img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin: 0px 12px 0px 0px;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.line-li p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(var(--text-rgb), 0.5);
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line-li-top {
+    display: flex;
+}
+
+.li-fake {
+    width: 100%;
+    list-style-type: none;
+    padding: 9px 16px;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+    &:hover {
+        background: rgba(var(--text-rgb), 0.03);
+    }
+}
+
+h4 {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 12px;
+}

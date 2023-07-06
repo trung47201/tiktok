@@ -1,0 +1,119 @@
+.search-form {
+    width: 370px;
+    height: 46px;
+    background: rgba(var(--text-rgb), 0.06);
+    border-radius: 23px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+    input {
+        width: 100%;
+        background: transparent;
+        color: rgb(var(--text-rgb));
+        border: 0;
+        font-size: 1.6rem;
+        height: 100%;
+        caret-color: var(--primary);
+        padding: 0 90px 0 20px;
+        font-size: 16px;
+        font-family: var(--font-main);
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: rgba(var(--text-rgb), 0.75);
+    }
+
+    &:hover .search-btn {
+        background-color: rgba(var(--text-rgb), 0.04);
+    }
+
+    &:hover input {
+        border: 1px solid rgba(var(--text-rgb), 0.3);
+        border-radius: 50px;
+    }
+}
+
+.search {
+    &:focus {
+        border: 1px solid rgba(var(--text-rgb), 0.3);
+        border-radius: 50px;
+    }
+}
+.search-clear {
+    height: 96%;
+}
+.search-clear,
+.loading {
+    width: 36px;
+    position: absolute;
+    right: 59px;
+    color: rgba(var(--text-rgb), 0.34);
+}
+.search-btn {
+    position: absolute;
+    right: 1px;
+    width: 57px;
+    height: 96%;
+    border-radius: 0 23px 23px 0px;
+    cursor: pointer;
+    border-left: 1px solid lightgray;
+    font-size: 2rem;
+    color: rgba(var(--text-rgb), 0.34);
+}
+
+.search-box {
+    width: 360px;
+    overflow-y: scroll;
+    max-height: min((100vh - 96px) - 60px, 760px);
+    padding-top: 10px;
+}
+
+.list-key-search li {
+    width: 100%;
+    list-style-type: none;
+    padding: 9px 16px;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+    &:hover {
+        background: rgba(var(--text-rgb), 0.03);
+    }
+}
+
+.list-key-search h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 12px;
+    padding-left: 8px;
+}
+
+.search-box-header {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(var(--text-rgb), 0.75);
+    padding: 5px 12px 3px;
+}
+
+//loading
+.loading {
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

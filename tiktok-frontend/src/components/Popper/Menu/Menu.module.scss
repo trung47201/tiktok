@@ -1,0 +1,45 @@
+.menu-box {
+    padding-top: 5px;
+}
+
+.wrapper-item {
+    padding: 4px 6px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    min-width: 230px;
+
+    &:hover {
+        background-color: rgba(var(--text-rgb), 0.03) !important;
+    }
+}
+
+.wrapper-box {
+    max-height: min(100vh - 96px - 60px, 760px);
+    overflow: auto;
+}
+
+// sub-menu
+.header {
+    display: flex;
+    position: relative;
+    margin-top: -8px;
+}
+
+.back-btn {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.seperate {
+    border-top: 1px solid rgba(var(--text-rgb), 0.12);
+}

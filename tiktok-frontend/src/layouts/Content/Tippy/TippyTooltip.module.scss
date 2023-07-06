@@ -1,0 +1,93 @@
+.wrapper {
+    margin-left: 10px;
+}
+.box-detail {
+    position: relative;
+    width: 320px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.avatar,
+.avatar span {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.nickname {
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.028px;
+}
+
+.fullname {
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.093px;
+}
+.user-stat {
+    margin-top: 8px;
+}
+.user-stat-follow-count {
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+.user-stat-follow {
+    color: rgba(var(--text-rgb), 0.75);
+    font-family: var(--font-main);
+    letter-spacing: 0px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 12px;
+}
+.user-stat-like-count {
+    font-family: var(--font-main);
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+.user-stat-like {
+    color: rgba(var(--text-rgb), 0.75);
+    font-family: var(--font-main);
+    letter-spacing: 0px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+.user-bio {
+    font-family: var(--font-main);
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.093px;
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid rgba(var(--text-rgb), 0.12);
+}

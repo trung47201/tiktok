@@ -1,0 +1,117 @@
+.wrapper {
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 1);
+    background: none;
+    font-weight: 700;
+    font-size: 16px;
+    min-width: 100px;
+    padding: 6px 16px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    height: 36px;
+    user-select: none;
+    font-family: var(--font-main);
+    display: inline-flex;
+
+    + .wrapper {
+        margin-left: 16px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.disable {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.primary {
+    background: var(--primary);
+    color: rgba(255, 255, 255, 1) !important;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+}
+
+.outline {
+    border: 1px solid rgba(var(--text-rgb), 0.12);
+    &:hover {
+        background-color: rgba(var(--text-rgb), 0.03);
+    }
+}
+
+.outlinePrimary {
+    border: 1px solid var(--primary);
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+.small {
+    height: 32px;
+    font-size: 14px;
+    padding: 0 8px;
+    min-width: 90px;
+}
+.large {
+    color: var(--primary);
+    min-width: 168px;
+    min-height: 48px;
+    font-size: 18px;
+}
+
+.borderRadius {
+    border-radius: 100px;
+}
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+
+.seperate {
+    border-top: 1px solid var(--text-color);
+}
+
+.follow {
+    display: flex;
+    color: var(--primary);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    min-width: 106px;
+    min-height: 28px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 8px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.followSmall {
+    display: flex;
+    color: var(--primary);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    height: 28px;
+}
+
+.following {
+    color: var(--text-rgb);
+}
